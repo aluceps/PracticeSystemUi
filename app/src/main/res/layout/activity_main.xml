@@ -32,5 +32,15 @@
             android:layout_height="match_parent"
             android:background="@color/colorOrange"
             />
+
+        <View
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navigationbar_size"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/navigationbar_size"
+            android:background="@color/colorPrimary"
+            tools:layout_marginBottom="0dp"
+            />
     </android.support.design.widget.CoordinatorLayout>
 </layout>

@@ -56,6 +56,7 @@ class MainFragment : Fragment() {
         activity?.run {
             (this as MainActivity).supportActionBar?.hide()
             window?.decorView?.systemUiVisibility = hideSystemUi
+            setBottomBarMargin(0)
         }
     }
 
@@ -63,6 +64,9 @@ class MainFragment : Fragment() {
         activity?.run {
             (this as MainActivity).supportActionBar?.show()
             window?.decorView?.systemUiVisibility = showSystemUi
+            resources?.getDimension(R.dimen.navigationbar_size)?.let {
+                setBottomBarMargin(it.toInt())
+            }
         }
     }
 
